@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$MASAI</title>
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/premium-photo/penguin-christmas-character-cute-penguin-christmas-scenery-dark-mode-penguin-background_175994-47831.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-family: 'Henny Penny', sans-serif;
+        }
+
+        /* Background video */
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Ensures the video is in the background */
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(34, 34, 34, 0.7); /* Semi-transparent background for header */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2.5em;
+            text-shadow: 3px 3px 10px rgba(255, 0, 255, 0.5);
+            font-family: 'Silkscreen', cursive;
+        }
+
+        /* Navbar */
+        nav {
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            padding: 15px 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff6347;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px 10px;
+        }
+
+        .meme {
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 900px;
+            position: relative;
+        }
+
+        .meme-images {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .meme-images img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .meme-images img:hover {
+            transform: rotate(10deg) scale(1.2);
+            box-shadow: 0 0 20px #ff0000;
+        }
+
+        .crazy-caption {
+            font-size: 2.5em;
+            color: #ff69b4;
+            text-shadow: 5px 5px 20px rgba(255, 0, 255, 0.7);
+            font-family: 'Silkscreen', cursive;
+            animation: glitch 1s infinite alternate-reverse;
+            margin-top: 20px;
+        }
+
+        @keyframes glitch {
+            0% {
+                transform: translateX(-5px);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+            100% {
+                transform: translateX(-5px);
+            }
+        }
+
+        .funny-button {
+            background-color: #ff00ff;
+            color: #fff;
+            font-size: 1.5em;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            font-family: 'Henny Penny', sans-serif;
+        }
+
+        .funny-button:hover {
+            transform: scale(1.1);
+            background-color: #ff1493;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 1.2em;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(255, 99, 71, 0.5);
+        }
+
+        .social-icons {
+            margin: 30px 0;
+        }
+
+        .social-icons img {
+            width: 70px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons img:hover {
+            transform: rotate(15deg) scale(1.2);
+        }
+
+        /* New added styles */
+        #copy-text {
+            font-size: 2em;
+            margin-top: 30px;
+        }
+
+        #copy-button {
+            padding: 10px 20px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        #copy-button:hover {
+            transform: scale(1.1);
+            background-color: #ffffff;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgb(255, 255, 255);
+            font-family: 'Silkscreen', cursive;
+        }
+
+        .tokenomics, .roadmap {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 30px 0;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .tokenomics img, .roadmap img {
+            width: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-left: 50px;
+            margin-right: 10%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Background Video -->
+<video class="background-video" autoplay muted loop>
+    <source src="https://cdn.pixabay.com/video/2020/08/21/47802-451812879_tiny.mp4">
+</video>
+
+<!-- Header -->
+    <header>
+        $MASAI
+    </header>
+
+<!-- Navbar -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#social">Social Media</a></li>
+    </ul>
+</nav>
+
+<div class="container" id="home">
+    <!-- Meme Section -->
+    <div class="meme">
+        <div class="meme-images">
+            <img src="img/PR.png">
+        </div>
+
+    </div>
+
+    <!-- Tokenomics Section -->
+    <div class="tokenomics" id="tokenomics">
+        <div>
+            <h2>TOKENOMICS</h2>
+            <p>Token Name = $MASAI</p>
+            <p>TICKER = $MASAI</p>
+            <p>TOTAL SUPPLY = 1,000,000,000</p>
+            <p>LIQUIDITY POOL BURNED = 100%</p>
+            <p>TAXES = 0%</p>
+        </div>
+    </div>
+
+    <!-- Roadmap Section -->
+    <div class="roadmap" id="roadmap">
+        <div>
+            <h2>ROADMAP</h2>
+            <p>1. Define Goals and Objectives</p>
+            <p>2. Identify Steps and Phases</p>
+            <p>3. Schedule Tasks and Phases</p>
+            <p>4. Allocate Resources</p>
+            <p>5. Choose Roadmap Format</p>
+        </div>
+
+    </div>
+
+    <!-- Copy Text Section -->
+    <div id="copy-section">
+        <p id="copy-text">CA:XXXXXXXXXXXXXXXXXXXX</p>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-icons" id="social">
+        <a href="https://x.com/santapedev"><img src="https://www.freepnglogos.com/uploads/twitter-x-logo-png/twitter-x-logo-png-9.png" alt="Twitter"></a>
+        <a href="https://t.me/santapesol"><img src="https://logodownload.org/wp-content/uploads/2017/11/telegram-logo-8.png" alt="Telegram"></a>
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/021/819/342/non_2x/fun-green-pill-free-png.png" alt="Pump.fun"></a>
+    </div>
+</div>
+
+<!-- Footer -->
+ <center>
+<footer class="footer">
+    <p>© 2024 $MASAI, All Rights Reserved.</p>
+</footer>
+</center>
+
+<script>
+    function copyText() {
+        var copyText = document.getElementById("copy-text");
+        navigator.clipboard.writeText(copyText.innerText);
+        alert("Teks disalin: " + copyText.innerText);
+    }
+</script>
+
+</body>
+</html>
